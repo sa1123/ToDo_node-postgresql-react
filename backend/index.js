@@ -47,8 +47,21 @@ app.get('/:todo_id', (req, res) => {
         });
 });
 
-// POST: Create todo
-app.post('/add-todo')
+// POST: Create new todo
+app.post('/add-todo', (req, res) => {
+    const { todo_note } = req.body;
+    db('todo')
+        .insert({
+            todo: todo_note,
+        })
+        .then(() => {
+            console.log("Todo added");
+            return res.json({ msg: 'Todo added'});
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+});
 
 const port = process.env.PORT || 5000;
 
