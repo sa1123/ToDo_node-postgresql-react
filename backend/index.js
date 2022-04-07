@@ -64,7 +64,7 @@ app.post('/add-todo', (req, res) => {
 });
 
 // POST: Delete todo
-app.post('/delete-todo', (req, res) => {
+app.delete('/delete-todo', (req, res) => {
     const todo_id = req.body;
     const todo_id_to_delete = Number(todo_id.todo_id)
     db('todo')
