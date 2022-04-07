@@ -63,6 +63,23 @@ app.post('/add-todo', (req, res) => {
         });
 });
 
+// POST: Delete todo
+app.post('/delete-todo', (req, res) => {
+    const todo_id = req.body;
+    const todo_id_to_delete = Number(todo_id.todo_id)
+    db('todo')
+        .where('todo_id', '=', todo_id_to_delete)
+        .del()
+        .then(() => {
+            console.log("Todo deleted");
+            return res.json({ msg: 'Todo deleted'});
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+});
+
+
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server running on ${port}`));
