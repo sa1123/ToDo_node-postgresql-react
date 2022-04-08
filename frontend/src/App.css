@@ -102,6 +102,10 @@ form div {
     max-width: 100%;
 }
 
+.todo-container:hover {
+  background: white;
+}
+
 .todo-container h1 {
     font-size: 3rem;
 }
