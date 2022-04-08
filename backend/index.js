@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const knex = require('knex'); //for sql
-require('dotenv').config({ path: './.env'});
+require('dotenv').config({ path: '.env'});
 
 const db = knex({
     client: 'pg',
@@ -49,10 +49,10 @@ app.get('/:todo_id', (req, res) => {
 
 // POST: Create new todo
 app.post('/add-todo', (req, res) => {
-    const { todo_note } = req.body;
+    const { todoText } = req.body;
     db('todo')
         .insert({
-            todo: todo_note,
+            todo_content: todoText,
         })
         .then(() => {
             console.log("Todo added");
@@ -80,7 +80,7 @@ app.delete('/delete-todo', (req, res) => {
 });
 
 // PUT: Update todo by todo_id from Db
-app.put('/update-todo', (req,res) => {
+app.put('/update-todo', (req, res) => {
     db('todo')
         .where('todo_id', '=', 1)
         .update({ todo: 'this is an update'})
