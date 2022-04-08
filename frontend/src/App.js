@@ -49,6 +49,9 @@ const App = () => {
                   <p>
                     {todo.todo_content}
                   </p>
+                  <div>
+                    <button type="submit">Delete</button>
+                  </div>
                 </div>
               );
             })}

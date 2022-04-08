@@ -26,7 +26,7 @@ header h1 {
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fcee0b;
 }
 
 section {
@@ -49,6 +49,7 @@ form {
 }
 
 form input {
+    border: solid 0.005px #fcee0b;
     height: 3rem;
     padding: 1.5rem;
 }
@@ -57,7 +58,7 @@ form textarea {
     padding: 1.5rem;
 }
 
-form button {
+button {
     padding: 1rem;
     border: none;
     background: #fcee0b;
@@ -65,10 +66,23 @@ form button {
     cursor: pointer;
     transition: background 0.3s;
     text-transform: uppercase;
+    border: solid 0.00005px black;
 }
 
-form button:hover {
+button:hover {
     background: rgb(243, 212, 35);
+}
+
+main button {
+  background: black;
+  color: #fcee0b;
+  border-radius: 1rem;
+  padding: 0.45rem;
+}
+
+main button:hover {
+  color: rgb(243, 212, 35);
+  background-color: black;
 }
 
 form div {
