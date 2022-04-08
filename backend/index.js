@@ -56,7 +56,7 @@ app.post('/add-todo', (req, res) => {
         })
         .then(() => {
             console.log("Todo added");
-            return res.json({ msg: 'Todo added'});
+            return res.redirect('http://localhost:3000')
         })
         .catch((err) => {
             console.log(err);
