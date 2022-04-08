@@ -12,14 +12,14 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Arsenal', sans-serif;
-    /* letter-spacing: 0.2rem; */
-    background: rgb(242, 242, 242);
+    background: lightyellow;
     color: #0e0e0e;
 }
 
 header {
     background: #0e0e0e;
     padding: 1rem;
+    letter-spacing: 0.2rem;
 }
 
 header h1 {
