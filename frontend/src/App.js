@@ -49,7 +49,7 @@ const App = () => {
                   <p>
                     {todo.todo_content}
                   </p>
-                  <div>
+                  <div method='DELETE' action='http://127.0.0.1:5000/delete-todo'>
                     <button type="submit">Delete</button>
                   </div>
                 </div>
