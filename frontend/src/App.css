@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-size: 1.6rem;
+    font-family: 'Arsenal', sans-serif;
+    /* letter-spacing: 0.2rem; */
+    background: rgb(242, 242, 242);
+    color: #0e0e0e;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    background: #0e0e0e;
+    padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+header h1 {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 4rem;
+}
+
+.form-container {
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 100%;
+    padding: 0 2rem 0 2rem;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+}
+
+form input {
+    height: 3rem;
+    padding: 1.5rem;
+}
+
+form textarea {
+    padding: 1.5rem;
+}
+
+form button {
+    padding: 1rem;
+    border: none;
+    background: #fcee0b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background: rgb(243, 212, 35);
+}
+
+form div {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1.3rem;
+}
+
+.todo-container {
+    background: #fcee0b;
+    padding: 4rem;
+    margin-top: 2rem;
+    border-radius: 2rem 7rem;
+    width: 50rem;
+    max-width: 100%;
+}
+
+.todo-container h1 {
+    font-size: 3rem;
+}
+
+.todo-container p {
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+}
+
+.todo-container img {
+    width: 10rem;
+    height: 15rem;
+}
+
+.high {
+    background: #66cc32;
+    width: 4rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.medium {
+    background: #ffcc32;
+    width: 4rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.low {
+    background: #ff0100;
+    width: 4rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 1094px) {
+    section {
+        justify-content: center;
+        /* margin: 0 auto; */
+    }
 }
