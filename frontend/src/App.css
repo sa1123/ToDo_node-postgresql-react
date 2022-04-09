@@ -92,7 +92,7 @@ form div {
 }
 
 .todo-container {
-    background: whitesmoke;
+    background: lightblue;
     border: solid black;
     box-shadow: 5px 10px #888888;
     padding: 4rem;
@@ -103,7 +103,7 @@ form div {
 }
 
 .todo-container:hover {
-  background: white;
+  background: cyan;
 }
 
 .todo-container h1 {
@@ -123,6 +123,5 @@ form div {
 @media screen and (max-width: 1094px) {
     section {
         justify-content: center;
-        /* margin: 0 auto; */
     }
 }
