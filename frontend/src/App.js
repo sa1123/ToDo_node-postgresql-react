@@ -19,6 +19,7 @@ const App = () => {
     };
     getAPI();
   }, []);
+
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(true);
   return (
@@ -49,9 +50,11 @@ const App = () => {
                   <p>
                     {todo.todo_content}
                   </p>
-                  <div method='DELETE' action='http://127.0.0.1:5000/delete-todo'>
-                    <button type="submit">Delete</button>
-                  </div>
+                  <form method='POST' action='http://127.0.0.1:5000/delete-todo/'>
+                    <div>
+                      <button class="done" name="todo_id_to_delete" value={todo.todo_id} type="submit">Done</button>
+                    </div>
+                  </form>
                 </div>
               );
             })}

@@ -74,15 +74,16 @@ button:hover {
 }
 
 .todo-container button {
-  background: black;
-  color: #fcee0b;
-  border-radius: 1rem;
-  padding: 0.55rem;
+    background: black;
+    color: #fcee0b;
+    border-radius: 1rem;
+    padding: 0.55rem;
+    width: 6rem;
 }
 
 .todo-container button:hover {
-  color: rgb(243, 212, 35);
-  background-color: black;
+    color: rgb(243, 212, 35);
+    background-color: black;
 }
 
 form div {

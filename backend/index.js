@@ -60,22 +60,25 @@ app.post('/add-todo', (req, res) => {
         })
         .catch((err) => {
             console.log(err);
+            return res.redirect('http://localhost:3000')
         });
 });
 
 // DELETE: Delete todo
-app.delete('/delete-todo', (req, res) => {
-    const todo_id = req.body;
-    const todo_id_to_delete = Number(todo_id.todo_id)
+app.post('/delete-todo', (req, res) => {
+    const { todo_id_to_delete } = req.body;
+    console.log("Here-------------")
+    console.log(todo_id_to_delete);
     db('todo')
         .where('todo_id', '=', todo_id_to_delete)
         .del()
         .then(() => {
             console.log("Todo deleted");
-            return res.json({ msg: 'Todo deleted'});
+            return res.redirect('http://localhost:3000')
         })
         .catch((err) => {
             console.log(err);
+            return res.redirect('http://localhost:3000')
         });
 });
 
