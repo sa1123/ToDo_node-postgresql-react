@@ -10,6 +10,10 @@ Backend: Nodejs
 <br>
 Database: Postgresql
 
+
+![](https://j.gifs.com/qQoDo2.gif)
+
+
 <img src="frontend\public\Snapshot1.png" alt="Snapshot of ui">
 <br>
 <p>When cursor is over a card</p>
