@@ -79,20 +79,6 @@ app.delete('/delete-todo', (req, res) => {
         });
 });
 
-// PUT: Update todo by todo_id from Db
-app.put('/update-todo', (req, res) => {
-    db('todo')
-        .where('todo_id', '=', 1)
-        .update({ todo: 'this is an update'})
-        .then(() => {
-            console.log("Updated");
-            return res.json({ msg: 'Updated'});
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server running on ${port}`));
