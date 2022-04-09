@@ -10,4 +10,7 @@ Backend: Nodejs
 <br>
 Database: Postgresql
 
-<img src="frontend\public\Snapshot.png">
+<img src="frontend\public\Snapshot1.png">
+<br>
+<img src="frontend\public\Snapshot2.png" alt="Card hover">
+

@@ -38,7 +38,7 @@ section {
 
 .form-container {
     margin: 2rem auto;
-    width: 50rem;
+    width: 200rem;
     max-width: 100%;
     padding: 0 2rem 0 2rem;
 }
@@ -50,7 +50,7 @@ form {
 
 form input {
     border: solid 0.005px #fcee0b;
-    height: 3rem;
+    height: 6em;
     padding: 1.5rem;
 }
 
