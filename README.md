@@ -1,10 +1,12 @@
 # ToDo App
 
-A Todo webapp built upon MERN stack
+A Todo webapp built upon:
 
 Frontend: React
 <br>
-Backend: Express
+Middleware: Express
+<br>
+Backend: Nodejs
 <br>
 Database: Postgresql
 
