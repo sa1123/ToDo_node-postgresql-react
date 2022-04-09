@@ -43,19 +43,11 @@ section {
     padding: 0 2rem 0 2rem;
 }
 
-form {
-    display: flex;
-    flex-flow: column;
-}
-
 form input {
     border: solid 0.005px #fcee0b;
     height: 6em;
     padding: 1.5rem;
-}
-
-form textarea {
-    padding: 1.5rem;
+    font-size: 100%;
 }
 
 button {
@@ -79,11 +71,11 @@ button:hover {
     border-radius: 1rem;
     padding: 0.55rem;
     width: 6rem;
+    position: absolute;
 }
 
 .todo-container button:hover {
     color: rgb(243, 212, 35);
-    background-color: black;
 }
 
 form div {
@@ -101,6 +93,7 @@ form div {
     border-radius: 2rem;
     width: 41rem;
     max-width: 100%;
+    transition: background 0.3s;
 }
 
 .todo-container:hover {
@@ -109,7 +102,7 @@ form div {
 
 .todo-container p {
     margin: 0 0 5rem 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
     word-wrap: break-word;
 }
 
