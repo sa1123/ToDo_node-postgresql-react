@@ -67,8 +67,6 @@ app.post('/add-todo', (req, res) => {
 // DELETE: Delete todo
 app.post('/delete-todo', (req, res) => {
     const { todo_id_to_delete } = req.body;
-    console.log("Here-------------")
-    console.log(todo_id_to_delete);
     db('todo')
         .where('todo_id', '=', todo_id_to_delete)
         .del()

@@ -12,7 +12,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Arsenal', sans-serif;
-    background: lightyellow;
+    background: lightgoldenrodyellow;
     color: #0e0e0e;
 }
 
@@ -109,16 +109,12 @@ form div {
 
 .todo-container p {
     margin: 0 0 5rem 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    word-wrap: break-word;
 }
 
 .todo-container p::first-letter{
     text-transform: uppercase;
-}
-
-.todo-container img {
-    width: 10rem;
-    height: 15rem;
 }
 
 @media screen and (max-width: 1094px) {

@@ -13,4 +13,5 @@ Database: Postgresql
 <img src="frontend\public\Snapshot1.png" alt="Snapshot of ui">
 <br>
 <img src="frontend\public\Snapshot2.png" alt="Snapshot of ui when Card hover">
-
+<br>
+<img src="frontend\public\Snapshot3.png" alt="Snapshot of ui when adding maximum number of characters">
