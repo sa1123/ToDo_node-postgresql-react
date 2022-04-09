@@ -73,14 +73,14 @@ button:hover {
     background: rgb(243, 212, 35);
 }
 
-main button {
+.todo-container button {
   background: black;
   color: #fcee0b;
   border-radius: 1rem;
-  padding: 0.45rem;
+  padding: 0.55rem;
 }
 
-main button:hover {
+.todo-container button:hover {
   color: rgb(243, 212, 35);
   background-color: black;
 }
@@ -106,13 +106,13 @@ form div {
   background: cyan;
 }
 
-.todo-container h1 {
-    font-size: 3rem;
+.todo-container p {
+    margin: 0 0 5rem 0;
+    font-size: 2.5rem;
 }
 
-.todo-container p {
-    margin: 1rem 0 1rem 0;
-    font-size: 2rem;
+.todo-container p::first-letter{
+    text-transform: uppercase;
 }
 
 .todo-container img {
